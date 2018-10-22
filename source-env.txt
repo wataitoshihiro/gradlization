@@ -1,0 +1,1 @@
+echo "source ~/workspace/movie-fun-modernization/.env" >> ~/.bashrc
