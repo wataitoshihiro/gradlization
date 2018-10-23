@@ -4,3 +4,7 @@ aws_secret_access_key = CCRivnpS/u6QCRFZtt9RY/Dwl4E4lf+S4MVgJOIi
 Endpoint:  http://192.168.126.4:9000  http://127.0.0.1:9000
 AccessKey: P6AP8GUI1T08SBICLDDL
 SecretKey: WIz0hwBZXCJiEdOZlPOtvgncx1i5Jjuofwewjw/O
+
+cf cups s3-service -p '{"access_key_id": "AKIAJQTUFHPLLNDIBCWQ", "bucket": "student-artifacts-yale", "secret_access_key": "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"}'
+
+cf cups s3-service -p '{"accesskey": "AKIAJQTUFHPLLNDIBCWQ", "bucket": "student-artifacts-yale", "secretkey": "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"}'
