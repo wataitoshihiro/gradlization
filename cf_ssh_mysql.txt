@@ -1,0 +1,4 @@
+cf ssh -N -L 63306:10.0.8.18:3306 album-service
+
+mysql -u${DATABASE_USERNAME} -h127.0.0.1 -P63306 -p -e"SHOW DATABASES;"
+mysql -uabcdefg -h127.0.0.1 -P63306 -p -e"SHOW DATABASES;"

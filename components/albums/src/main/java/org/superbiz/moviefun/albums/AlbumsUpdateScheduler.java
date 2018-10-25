@@ -47,6 +47,7 @@ public class AlbumsUpdateScheduler {
         }
     }
 
+    //TODO scheduler sql modify
     private boolean startAlbumSchedulerTask() {
         int updatedRows = jdbcTemplate.update(
             "UPDATE album_scheduler_task" +
