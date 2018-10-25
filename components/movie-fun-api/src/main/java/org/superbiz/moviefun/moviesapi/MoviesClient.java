@@ -35,7 +35,8 @@ public class MoviesClient {
 
 
     public int count(String field, String key) {
-        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(moviesUrl + "/count")
+//        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(moviesUrl + "/count")
+        UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(moviesUrl + "/count")
             .queryParam("field", field)
             .queryParam("key", key);
 
@@ -44,15 +45,16 @@ public class MoviesClient {
 
 
     public List<MovieInfo> findAll(int start, int pageSize) {
-        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(moviesUrl)
-            .queryParam("start", start)
-            .queryParam("pageSize", pageSize);
-
+//        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(moviesUrl)
+        UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(moviesUrl)
+                .queryParam("start", start)
+                .queryParam("pageSize", pageSize);
         return restOperations.exchange(builder.toUriString(), GET, null, movieListType).getBody();
     }
 
     public List<MovieInfo> findRange(String field, String key, int start, int pageSize) {
-        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(moviesUrl)
+//        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(moviesUrl)
+        UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(moviesUrl)
             .queryParam("field", field)
             .queryParam("key", key)
             .queryParam("start", start)

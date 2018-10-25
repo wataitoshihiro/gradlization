@@ -1,0 +1,1 @@
+./gradlew modernizationServiceDiscovery -PmovieFunUrl=https://movie-fun-app-watai-takahashi.apps.evans.pal.pivotal.io -PuaaUsername=user -PuaaPassword=password
