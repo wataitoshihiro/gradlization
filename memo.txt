@@ -1,0 +1,4 @@
+
+movie-fun-app-watai-takahashi.apps.evans.pal.pivotal.io
+
+movie-fun-app-{UNIQUE_IDENTIFIER}.apps.chicken.pal.pivotal.io
